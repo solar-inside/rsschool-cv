@@ -1,1 +1,15 @@
-text for style.css
+@font-face {
+    font-family: "League_Spartan";
+     src: url("assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
+   }
+
+* {
+    box-sizing: border-box;
+  }
+
+.body{
+    font-family: "League_Spartan";
+    font-weight: 100;
+}
+
+
