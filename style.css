@@ -3,13 +3,21 @@
      src: url("assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
    }
 
+   @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
 * {
     box-sizing: border-box;
   }
 
  body {
     font-family: "League_Spartan";
-    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -19,15 +27,17 @@
 }
 
 .header {
-    border: 1px solid red;
+    border: 5px solid transparent;
+    background-color: cornflowerblue;
 }
 
 .main {
-    border: 1px solid red;
+    border: 5px solid transparent;
 }
 
 .footer {
-    border: 1px solid red;
+    border: 5px solid transparent;
+    background-color: cornflowerblue;
 }
 
 .container {
@@ -40,12 +50,14 @@
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-   }
+    }
 
-   .nav-link {
+.nav-link {
     padding: 0 20px;
     line-height: 50px;
     transition: .3s;
+    text-decoration-color: black;
+    text-decoration: none;
   }
 
   html {
@@ -53,12 +65,25 @@
   }
 
  a:hover {
-    background-color: cornflowerblue;
-    color: black;
-}
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
+ }
  a:link{
-    color: blueviolet;
+    color: rgb(250, 249, 249);
     margin: 5px;
  }
 
- 
+ .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 50%;
+  }
+
+  .profile-photo{
+    width: 350px;
+    border-radius: 5px;
+  }
+
