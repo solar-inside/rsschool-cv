@@ -15,7 +15,7 @@
 
  body {
     font-family: "League_Spartan";
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1.5;
     font-weight: 400;
     min-height: 100vh;
@@ -33,11 +33,14 @@
 
 .main {
     border: 5px solid transparent;
+    background-color: rgb(148, 196, 252);
 }
 
 .footer {
     border: 5px solid transparent;
     background-color: cornflowerblue;
+    line-height: 40px;
+    font-size: large;
 }
 
 .container {
@@ -50,26 +53,31 @@
     justify-content: flex-end;
     align-items: center;
     list-style: none;
+    height: 30px;
     }
 
 .nav-link {
+    line-height: 40px;
     padding: 0 20px;
     line-height: 50px;
     transition: .3s;
     text-decoration-color: black;
     text-decoration: none;
-  }
+    font-size: x-large;
+    }
 
   html {
     scroll-behavior: smooth; 
   }
 
  a:hover {
-    background-color: rgb(0, 0, 0);
-    color: rgb(253, 253, 253);
+    background-color: rgb(99, 57, 250)  ;
+    color: blue;
+    border-radius: 10px;
+
  }
  a:link{
-    color: rgb(250, 249, 249);
+    color: rgb(238, 245, 239) ;
     margin: 5px;
  }
 
@@ -80,10 +88,33 @@
   
   .section {
     width: 50%;
-  }
+    }
 
   .profile-photo{
-    width: 350px;
-    border-radius: 5px;
+  padding: 10px;
+    width: 300px;
+    border-radius: 30px;
+    margin-left: 180px;
   }
 
+  .section-title {
+    margin-left: 200px;
+  }
+
+  .logo-github {
+    width: 100px;
+    }
+
+  .logo-rs {
+   width: 100px;
+   float: right;
+  }  
+
+  .container-myhub {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    color: black;
+  }
